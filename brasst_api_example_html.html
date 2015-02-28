@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Br.Asst. API example - HTML widget</title>
+</head>
+<body>
+	<!--
+		ua: Підключення скрипта
+		
+		en: Script inclusion
+		
+		ru: Подключение скрипта
+	-->
+	<script src="brasst_api.js"></script>
+	
+	<!--
+		ua: Визов скрипта. Ви можете також передати об'єкт з параметром 'locale' до функції-конструктора.
+			На даний момент доступними є: "ua" - українська, "en" - англійська, "ru" - російська
+		
+		en: Script call. You can also pass an object with 'locale' parameter into the constructor function.
+			Supported values for 'locale': "en" - english, "ua" - ukrainian, "ru" - russian
+		
+		ru: Вызов скрипта. Вы можете также передать объект с параметром 'locale' в функцию-конструктор.
+			На данный момент доступны значения: "ru" - русский, "ua" - украинский, "en" - английский
+	-->
+	<script>
+		var brasst = new Brasst({ locale: 'en' });
+	</script>
+</body>
+</html>
