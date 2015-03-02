@@ -21,10 +21,9 @@
 	function Brasst(options){
 		options = options || {};
 		
-		//added trailing slash... Why need to?
 		this.api = api + "/" + (trimSlashes(options.locale) || "");
 
-		this.initialize.apply(this, arguments);
+		window.onload = this.initialize.apply(this, arguments);
 	}
 	Brasst.prototype = {
 		initialize: function(){

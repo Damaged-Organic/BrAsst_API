@@ -6,18 +6,18 @@
 </head>
 <body>
 	<!--
-		ua: Для прикладу ми використовуємо бібліотеку jQuery, так як вона дозволяє зробити CORS-запит нативними методами
-		
 		en: We're using jQuery library for example, as it natively allows to make a CORS request
+		
+		ua: Для прикладу ми використовуємо бібліотеку jQuery, так як вона дозволяє зробити CORS-запит нативними методами
 		
 		ru: Для примера мы используем библиотеку jQuery, так как она позволяет сделать CORS-запрос нативными методами
 	-->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	
 	<!--
-		ua: Для отримання даних використовується метод "GET" з типом "json". Додатково вказується, що запит буде крос-доменним
-		
 		en: "GET" method with type 'json' is used. Furthermore, cross-domain request type is additionally specified.
+	
+		ua: Для отримання даних використовується метод "GET" з типом "json". Додатково вказується, що запит буде крос-доменним
 		
 		ru: Для получения данных используется метод "GET" с типом "json". Дополнительно указывается, что запрос будет кросс-доменным
 	-->
@@ -36,6 +36,21 @@
 	</script>
 	
 	<!--
+		en: Received json object should have the following keys:
+		{
+			browser:           browser name,
+			vendor:            vendor company,
+			osFamily:          client's operating system family,
+			stableVersion:     last stable browser release,
+			clientVersion:     user's browser version,
+			isOutdated:        Boolean value, showing whether client's browser is outdated,
+			stableVersionLink: link to the official browser's download page,
+			userWarning:       if not empty, contains string identifier of user warning:
+							   "user_warning_unsupported_browser": Br.Asst. is not supporting current browser version checking
+							   "user_warning_unsupported_os":      Current browser is not supported on user's operating system,
+																   for example, in case of Safari for Windows
+		}
+	
 		ua: Отриманий об'єкт json буде мати наступні ключі:
 		{
 			browser:           назва браузеру,
@@ -51,21 +66,6 @@
 																   системі користувача, наприклад, у випадку Safari під Windows
 		}
 		
-		en: Received json object should have the following keys:
-		{
-			browser:           browser name,
-			vendor:            vendor company,
-			osFamily:          client's operating system family,
-			stableVersion:     last stable browser release,
-			clientVersion:     user's browser version,
-			isOutdated:        boolean value, showing whether clint's browser is outdated,
-			stableVersionLink: link to the official browser's download page,
-			userWarning:       if not empty, contains string identifier of user warning:
-							   "user_warning_unsupported_browser": Br.Asst. is not supporting current browser version checking
-							   "user_warning_unsupported_os":      Current browser is not supported on user's operating system,
-																   for example, in case of Safari for Windows
-		}
-		
 		ru: Полученный объект json будет иметь следующие ключи:
 		{
 			browser:           название браузера,
@@ -75,7 +75,7 @@
 			clientVersion:     версия браузера пользователя,
 			isOutdated:        булевое значение - устарел ли браузер пользователя,
 			stableVersionLink: ссылка на сайт данного браузера,
-			userWarning:       если не пуста, содержит идентефикатор предупреждения для пользователя:
+			userWarning:       если не пуста, содержит идентификатор предупреждения для пользователя:
 							   "user_warning_unsupported_browser": Br.Asst. не поддерживает проверку данного браузера
 							   "user_warning_unsupported_os":      Данный браузер больше не поддерживается на операционной
 																   системе пользователя, например, в случае Safari под Windows
