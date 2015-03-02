@@ -5,4 +5,6 @@ We provide free and simple API for developers and webmasters. If you wish your u
 
 Here you can find examples of how to use it in HTML or JSON format with detailed commentaries.
 
+Also, <b>brasst_api.js</b> is is AMD compatible.
+
 More details on http://en.brasst.net.ua/#!api
